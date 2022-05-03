@@ -25,17 +25,24 @@ export default class gallery extends Component {
       <div className="viewport">
         <div className="container">
           <div className="grid">
-            <div className="gallery-container w-1 h-2">
+            <div className="gallery-container">
               <div className="gallery-item">
                 <div className="image">
                   <LazyLoadImage src={Anges} delayTime={1000} />
                 </div>
               </div>
             </div>
-            <div className="gallery-container h-2">
+            <div className="gallery-container">
               <div className="gallery-item">
                 <div className="image">
                   <LazyLoadImage src={Blue} delayTime={1000} />
+                </div>
+              </div>
+            </div>
+            <div className="gallery-container">
+              <div className="gallery-item">
+                <div className="image">
+                  <LazyLoadImage src={Flower} delayTime={1000} />
                 </div>
               </div>
             </div>
@@ -46,35 +53,28 @@ export default class gallery extends Component {
                 </div>
               </div>
             </div>
-            <div className="gallery-container h-2 w-1">
+            <div className="gallery-container h-2">
               <div className="gallery-item">
                 <div className="image">
-                  <LazyLoadImage src={Flower} delayTime={1000} />
+                  <LazyLoadImage src={Hien} delayTime={1000} style={{objectFit: 'cover', objectPosition: '50% 20%'}} />
                 </div>
               </div>
             </div>
             <div className="gallery-container w-2">
-              <div className="gallery-item">
-                <div className="image">
-                  <LazyLoadImage src={Hien} delayTime={1000} style={{objectFit: 'cover', objectPosition: '65% 20%'}} />
-                </div>
-              </div>
-            </div>
-            <div className="gallery-container w-2 h-2">
               <div className="gallery-item">
                 <div className="image">
                   <LazyLoadImage src={Elpis} delayTime={1000} />
                 </div>
               </div>
             </div>
-            <div className="gallery-container w-2 h-1">
+            <div className="gallery-container ">
               <div className="gallery-item">
                 <div className="image">
                   <LazyLoadImage src={Train} delayTime={1000} style={{objectFit: 'cover', objectPosition: '65% 60%'}} />
                 </div>
               </div>
             </div>
-            <div className="gallery-container w-2">
+            <div className="gallery-container">
               <div className="gallery-item">
                 <div className="image">
                   <LazyLoadImage src={Alice} delayTime={1000} style={{objectFit: 'cover', objectPosition: '65% 25%'}}/>

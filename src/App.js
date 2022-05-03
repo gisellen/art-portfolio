@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home"
 import Gallery from "./pages/Gallery/Gallery"
 import About from "./pages/About/About"
+import Sketches from './pages/Sketches/Sketches'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Navigate replace to="/home" />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/illust" element={<Gallery />} />
-        <Route exact path="/sketches">
+        <Route exact path="/sketches" element={<Sketches />}>
         </Route>
         <Route exact path="/about" element={<About />}>
         </Route>

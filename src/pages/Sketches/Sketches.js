@@ -27,27 +27,28 @@ export default class gallery extends Component {
                 </div>
               </div>
             </div>
-            <div className="gallery-container h-3">
+            <div className="gallery-container w-1 h-2">
               <div className="gallery-item">
                 <div className="image">
                   <LazyLoadImage src={Ing} delayTime={1000} />
                 </div>
               </div>
             </div>
-            <div className="gallery-container">
-              <div className="gallery-item">
-                <div className="image">
-                  <LazyLoadImage src={Sketches} delayTime={1000} />
-                </div>
-              </div>
-            </div>
-            <div className="gallery-container h-3">
+            <div className="gallery-container h-2">
               <div className="gallery-item">
                 <div className="image">
                   <LazyLoadImage src={Rosel} delayTime={1000} />
                 </div>
               </div>
             </div>
+            <div className="gallery-container w-1 h-2">
+              <div className="gallery-item">
+                <div className="image">
+                  <LazyLoadImage src={Sketches} delayTime={1000} />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

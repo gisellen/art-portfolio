@@ -1,26 +1,30 @@
+import React from "react";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
+import { AnimatePresence } from "framer-motion";
 
-import Home from "./pages/Home/Home"
-import Gallery from "./pages/Gallery/Gallery"
-import About from "./pages/About/About"
-import Sketches from './pages/Sketches/Sketches'
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import Gallery from "./pages/Gallery/Gallery";
+import About from "./pages/About/About";
+import Sketches from "./pages/Sketches/Sketches";
 
 function App() {
+  const location = useLocation();
+console.log(location)
   return (
-    <Router className="App">
+    <div className="App">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Navigate replace to="/home" />} />
-        <Route exact path="/home" element={<Home />} />
-        <Route exact path="/illust" element={<Gallery />} />
-        <Route exact path="/sketches" element={<Sketches />}>
-        </Route>
-        <Route exact path="/about" element={<About />}>
-        </Route>
-      </Routes>
-    </Router>
+      <AnimatePresence exitBeforeEnter={true}>
+        <Routes location={location} key={location.pathname}>
+          <Route exact path="/" element={<Navigate replace to="/home" />} />
+          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/illust" element={<Gallery />} />
+          <Route exact path="/sketches" element={<Sketches />}></Route>
+          <Route exact path="/about" element={<About />}></Route>
+        </Routes>
+      </AnimatePresence>
+    </div>
   );
 }
 

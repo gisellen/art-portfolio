@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import "./Sketches.css";
 
-import Girl from '../../assets/sketches/girl.PNG'
-import Ing from '../../assets/sketches/ing.jpg'
-import Sketches from '../../assets/sketches/sketches.jpg'
-import Rosel from '../../assets/sketches/wosel.jpg'
+import { motion } from "framer-motion";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -13,44 +10,40 @@ export default class gallery extends Component {
     function importAll(r) {
       return r.keys().map(r);
     }
+
     const images = importAll(
-      require.context("./../../assets/illust/", false, /\.(png|jpe?g|svg)$/)
+      require.context("./../../assets/sketches/", false, /\.(png|jpe?g|svg)$/)
     );
+
+    const pageMotion = {
+      initial: { opacity: 0 },
+      animate: { opacity: 1, transition: { duration: 1 } },
+      exit: { opacity: 0, transition: { duration: 0.3 } },
+    };
+
     return (
       <div className="viewport">
+        <motion.div
+          key="sketches"
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={pageMotion}
+        >
         <div className="container">
           <div className="sketches-grid">
-            <div className="gallery-container w-1 h-2">
-              <div className="gallery-item">
-                <div className="image">
-                  <LazyLoadImage src={Girl} delayTime={1000} />
+          {images.map((e) => (
+                <div className="gallery-container h-2 w-1">
+                  <div className="gallery-item">
+                    <div className="image">
+                      <LazyLoadImage src={e} delayTime={1000} />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="gallery-container w-1 h-2">
-              <div className="gallery-item">
-                <div className="image">
-                  <LazyLoadImage src={Ing} delayTime={1000} />
-                </div>
-              </div>
-            </div>
-            <div className="gallery-container h-2">
-              <div className="gallery-item">
-                <div className="image">
-                  <LazyLoadImage src={Rosel} delayTime={1000} />
-                </div>
-              </div>
-            </div>
-            <div className="gallery-container w-1 h-2">
-              <div className="gallery-item">
-                <div className="image">
-                  <LazyLoadImage src={Sketches} delayTime={1000} />
-                </div>
-              </div>
-            </div>
-
+              ))}
           </div>
         </div>
+        </motion.div>
       </div>
     );
   }

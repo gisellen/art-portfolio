@@ -18,28 +18,53 @@ export default function Navbar() {
 
   // animation settings
   const pageMotion = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 1 } },
-    exit: { opacity: 0, transition: { duration: 1 } },
+    initial: { opacity: 0, y: -100 },
+    animate: { opacity: 1, y: 0, transition: { duration: 1 } },
+    exit: { opacity: 0, y: -100, transition: { duration: 1 } },
+  };
+
+  const exitMotion = {
+    initial: { opacity: 1, y: 0 },
+    animate: { opacity: 0, y: -100, transition: { duration: 1 } },
+    exit: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
   return (
     <div>
       {displayNav ? (
+        <>
         <motion.div
+        key="navbar"
         initial="initial"
         animate="animate"
         exit="exit"
         variants={pageMotion}>
         <div className="center">
-          <Link  to="/home">home</Link>
-          <Link to="/illust">illust</Link>
-          <Link to="/sketches">sketches</Link>
-          <Link to="/about">about</Link>
+          <Link className="navbar" to="/home">home</Link>
+          <Link className="navbar" to="/illust">illust</Link>
+          <Link className="navbar" to="/sketches">sketches</Link>
+          <Link className="navbar" to="/about">about</Link>
         </div>
         </motion.div>
+        <hr className="nav-horizontal-divider"></hr>
+        </>
       ) : (
-        <div></div>
+         <>
+        <motion.div
+        key="navbar"
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        variants={exitMotion}>
+        <div className="center">
+          <Link className="navbar" to="/home">home</Link>
+          <Link className="navbar" to="/illust">illust</Link>
+          <Link className="navbar" to="/sketches">sketches</Link>
+          <Link className="navbar" to="/about">about</Link>
+        </div>
+        </motion.div>
+        <hr className="exit-nav-horizontal-divider"></hr>
+        </>
       )}
     </div>
   );

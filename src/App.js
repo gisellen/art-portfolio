@@ -11,7 +11,6 @@ import Sketches from "./pages/Sketches/Sketches";
 
 function App() {
   const location = useLocation();
-console.log(location)
   return (
     <div className="App">
       <Navbar />

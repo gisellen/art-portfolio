@@ -10,11 +10,6 @@
 .about-container{
     margin-left: 20px;
     margin-right: 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #c4c2c2;;
-    box-shadow: 10px 10px #dfdcdc;
     width: 50vh;
     height: 50%;
     padding-left: 30px;
@@ -25,4 +20,12 @@
 
 .about-text{
     font-family: 'Poppins', sans-serif;
+}
+
+.icons-description{
+    padding-top: 10px;
+}
+
+.icons{
+    margin-left: 5px;
 }

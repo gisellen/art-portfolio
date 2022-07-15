@@ -5,7 +5,7 @@
 
 <p align="center">This application is created using react.  The main purpose of it is to showcase my artworks in a customized website. </p>
 
-<p align="center"> <a href="http://gisellen.github.io/art-portfolio/home">Live Website</a> </p>
+<p align="center"> <a href="http://gisellen.github.io/art-portfolio">Live Website</a> </p>
 
 ## IMPORTANT INFORMATION
 

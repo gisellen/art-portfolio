@@ -17,6 +17,7 @@ function App() {
       <AnimatePresence exitBeforeEnter={true}>
         <Routes location={location} key={location.pathname}>
           <Route exact path="/" element={<Navigate replace to="/art-portfolio/home" />} />
+          <Route exact path="/home" element={<Navigate replace to="/art-portfolio/home" />} />
           <Route exact path="/art-portfolio" element={<Navigate replace to="/art-portfolio/home" />} />
           <Route exact path="/art-portfolio/home" element={<Home />} />
           <Route exact path="/art-portfolio/illust" element={<Gallery />} />

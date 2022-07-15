@@ -10,7 +10,7 @@ export default function Navbar() {
   };
   // display boolean
   let displayNav;
-  if (usePathname() === "/home") {
+  if (usePathname() === "/art-portfolio/home") {
     displayNav = false;
   } else {
     displayNav = true;
@@ -40,10 +40,10 @@ export default function Navbar() {
         exit="exit"
         variants={pageMotion}>
         <div className="center">
-          <Link className="navbar" to="/home">home</Link>
-          <Link className="navbar" to="/illust">illust</Link>
-          <Link className="navbar" to="/sketches">sketches</Link>
-          <Link className="navbar" to="/about">about</Link>
+          <Link className="navbar" to="/art-portfolio/home">home</Link>
+          <Link className="navbar" to="/art-portfolio/illust">illust</Link>
+          <Link className="navbar" to="/art-portfolio/sketches">sketches</Link>
+          <Link className="navbar" to="/art-portfolio/about">about</Link>
         </div>
         </motion.div>
         <hr className="nav-horizontal-divider"></hr>
@@ -57,10 +57,10 @@ export default function Navbar() {
         exit="exit"
         variants={exitMotion}>
         <div className="center">
-          <Link className="navbar" to="/home">home</Link>
-          <Link className="navbar" to="/illust">illust</Link>
-          <Link className="navbar" to="/sketches">sketches</Link>
-          <Link className="navbar" to="/about">about</Link>
+          <Link className="navbar" to="/art-portfolio/home">home</Link>
+          <Link className="navbar" to="/art-portfolio/illust">illust</Link>
+          <Link className="navbar" to="/art-portfolio/sketches">sketches</Link>
+          <Link className="navbar" to="/art-portfolio/about">about</Link>
         </div>
         </motion.div>
         <hr className="exit-nav-horizontal-divider"></hr>

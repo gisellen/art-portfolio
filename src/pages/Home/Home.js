@@ -25,7 +25,7 @@ export default function Home() {
         exit="exit"
         variants={pageMotion}
       >
-        <Link draggable="false" to="/illust">
+        <Link draggable="false" to="/art-portfolio/illust">
           <img
             className="home-image"
             src={image}

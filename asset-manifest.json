@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/art-portfolio/static/css/main.0fe4e2c3.css",
+    "main.js": "/art-portfolio/static/js/main.b72c9493.js",
+    "static/js/787.9109952f.chunk.js": "/art-portfolio/static/js/787.9109952f.chunk.js",
+    "static/media/flower.jpg": "/art-portfolio/static/media/flower.7b637c34ce74e2cfc2aa.jpg",
+    "static/media/wosel.jpg": "/art-portfolio/static/media/wosel.a6fdcfde6b141e0f6c45.jpg",
+    "static/media/bun.png": "/art-portfolio/static/media/bun.39a4c204dfdfcd0386f1.png",
+    "static/media/ing.jpg": "/art-portfolio/static/media/ing.749246194e35e5c738ce.jpg",
+    "static/media/hien.jpg": "/art-portfolio/static/media/hien.80f1456e6770818ed0e1.jpg",
+    "static/media/sketches.jpg": "/art-portfolio/static/media/sketches.7ea4ec6eca825e704ba9.jpg",
+    "static/media/saycheese.jpg": "/art-portfolio/static/media/saycheese.8e38ff4dcb17c83a498f.jpg",
+    "static/media/blue.jpg": "/art-portfolio/static/media/blue.4f7a0f4e96feaece727d.jpg",
+    "static/media/alice.png": "/art-portfolio/static/media/alice.397d8a8baba9a4f42b2b.png",
+    "static/media/train.jpg": "/art-portfolio/static/media/train.634c62a0ac7f41d92333.jpg",
+    "static/media/agnes.jpg": "/art-portfolio/static/media/agnes.7d48f79479557472e921.jpg",
+    "static/media/glam1.jpg": "/art-portfolio/static/media/glam1.a54f569f183743623a72.jpg",
+    "static/media/girl.png": "/art-portfolio/static/media/girl.1e7dc6646f45f047671b.png",
+    "static/media/tifa.jpg": "/art-portfolio/static/media/tifa.d388a16380362a1b6fa6.jpg",
+    "static/media/cat.png": "/art-portfolio/static/media/cat.55f5cdcc96cd604860cf.png",
+    "static/media/elpis.jpg": "/art-portfolio/static/media/elpis.58881813debe0d607c1d.jpg",
+    "static/media/DeskLight.png": "/art-portfolio/static/media/DeskLight.907c29551e48a6066b7e.png",
+    "static/media/Desk.png": "/art-portfolio/static/media/Desk.a0932896f803d4eeb4c7.png",
+    "index.html": "/art-portfolio/index.html",
+    "main.0fe4e2c3.css.map": "/art-portfolio/static/css/main.0fe4e2c3.css.map",
+    "main.b72c9493.js.map": "/art-portfolio/static/js/main.b72c9493.js.map",
+    "787.9109952f.chunk.js.map": "/art-portfolio/static/js/787.9109952f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fe4e2c3.css",
+    "static/js/main.b72c9493.js"
+  ]
+}

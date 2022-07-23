@@ -7,9 +7,11 @@
 
 <p align="center"> <a href="http://gisellen.github.io/art-portfolio">Live Website</a> </p>
 
-## IMPORTANT INFORMATION
+## Licensing
+Copyright (C) 2022 Giselle Domingo
 
-**ALL** images in this repository are under copyright and is created by **ME**.  
-Any form of use or distributions of my artwork will not be tolerated.  This website is intended to showcase artwork and be open-sourced for learning purposes.
+**ALL** images in this repository are created by **ME**.  
 
-The website itself is under free usage, you are free to mess with the source code.
+All artworks are under the CC-BY-NC license and cannot be used in commercial products.
+
+The website itself is under MIT license.
